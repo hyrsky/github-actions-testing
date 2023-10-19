@@ -27,8 +27,8 @@ jobs:
         run: |
           gh pr create \
             --base main \
-            --head dev \
-            --title "main to 4.x" \
-            --body "Sync changes to 4.x branch" || true
+            --head 1.x \
+            --title "main to 1.x" \
+            --body "Sync changes to 1.x branch" || true
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
